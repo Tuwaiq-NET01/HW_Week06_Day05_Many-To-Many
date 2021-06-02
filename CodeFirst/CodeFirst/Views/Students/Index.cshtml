@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Students";
+    var students = (List<Student>) ViewData["Students"];
+    
+}
+
+
+<div class="container-fluid">
+    
+</div>
+
+<table class="table table-hover">
+    <th>
+        <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        </tr>
+    </th>
+    
+    <tbody>
+    @foreach (var student in students)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.FirstName</td>
+            <td>@student.LastName</td>
+            <td>@student.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>
