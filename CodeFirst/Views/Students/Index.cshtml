@@ -1,0 +1,21 @@
+﻿@{
+    List<Student> students = (List<Student>)ViewData["Students"];
+}
+
+
+@if (students.Count > 0)
+{
+    @foreach (var student in students)
+    {
+        <p>@student.Id</p>
+        <p>@student.FirstName</p>
+        <p>@student.LastName</p>
+        <p>@student.Email</p>
+    }
+} else
+            {
+                <p> No students found</p>
+            }
+
+
+

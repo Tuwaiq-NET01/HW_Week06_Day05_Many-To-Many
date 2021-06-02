@@ -1,0 +1,14 @@
+﻿@{
+    Student student = ViewBag.Student;
+}
+
+@if (student != null)
+{
+    <p>ID: @student.Id</p>
+    <p>Name: @student.FirstName @student.LastName</p>
+    <p>Email: @student.Email</p>
+   
+} else {
+
+    <p>Data not found</p>
+}
