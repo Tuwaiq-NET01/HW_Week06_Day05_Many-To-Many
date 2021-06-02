@@ -1,0 +1,66 @@
+﻿
+@{
+    var stds = (List<Student>)ViewData["Students"];
+    var std1 = (string)ViewData["std1"];
+    var std2 = (string)ViewData["std2"];
+    var greaterThanTwo = (List<Student>)ViewData["greaterThanTwo"];
+
+
+}
+
+<h1> test from students view</h1>
+
+<h5> @std1 </h5>
+<h5> @std2 </h5>
+
+<hr />
+
+<h3>All students</h3>
+
+<table style="border: 1px solid black">
+    <tr>
+        <th>ID</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>Email</th>
+        <th>More Info</th>
+    </tr>
+    <tbody>
+        @foreach (var std in stds)
+        {
+            <tr>
+                <td>@std.Id</td>
+                <td>@std.FirstName</td>
+                <td>@std.LastName</td>
+                <td>@std.Email</td>
+                <td>  <a class="btn btn-info" href="students/details/@std.Id">SHOW</a>  </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<hr />
+
+<h3>Greater Than Two</h3>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>Email</th>
+    </tr>
+    <tbody>
+        @foreach (var student in greaterThanTwo)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
