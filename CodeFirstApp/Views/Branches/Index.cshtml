@@ -1,0 +1,32 @@
+﻿@*@{
+    var branches = (List<BranchModel>) ViewData["Branches"];
+    var branch2 = (BranchModel) ViewData["Branch2"];
+    var RiyadhBranch = (BranchModel) ViewData["BranchRiyadh"];
+    var SearchResult = (List<BranchModel>) ViewData["Result"];
+}
+
+@{
+    @if (branches != null)
+    {
+        foreach (var branch in branches)
+        {
+            <h1>@branch.Name @branch.Address @branch.Area @branch.Id</h1>
+        }
+    
+        <h1>Branch 2</h1>
+        <h2>@branch2.Name @branch2.Address @branch2.Area @branch2.Id</h2>
+                                                                
+        <h1>RiyadhBranch</h1>
+        <h2>@RiyadhBranch.Name @RiyadhBranch.Address @RiyadhBranch.Area @RiyadhBranch.Id</h2>
+    }
+    
+    @if (SearchResult != null)
+    {
+        foreach (var branch in SearchResult)
+        {
+            <h1>@branch.Name @branch.Address @branch.Area @branch.Id</h1>
+        }
+    }
+
+    
+}*@

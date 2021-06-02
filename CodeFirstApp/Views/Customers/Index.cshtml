@@ -1,0 +1,11 @@
+﻿@{
+    var Customres = (List<CustomerModel>)ViewData["Customers"];
+    
+}
+
+@{
+    foreach (var customre in Customres)
+    {
+        <h2>@customre.Id @customre.FirstName @customre.LastName @customre.Email  </h2>
+    }
+}
