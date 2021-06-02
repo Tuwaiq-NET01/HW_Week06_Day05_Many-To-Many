@@ -1,3 +1,75 @@
+
+### Many-To-Many
+
+- In this relation a new table need to be created to represent the relationship
+- Let's create a new table first to have a m-to-m relation first name it *CouponModel.cs*
+
+```csharp
+ public class CouponModel
+    {
+        public int Id { get; set; }
+        public string Code { get; set; }
+        public DateTime ExpiryDate { get; set; }
+    }
+```
+
+```csharp
+public DbSet<CouponModel> Coupons { get; set; }
+```
+
+```vbnet
+dotnet ef migrations add CreateCouponTable
+```
+
+```vbnet
+dotnet ef database update
+```
+
+- Join the two table and name it after the join entity *CouponCustomer.cs*
+
+```csharp
+public class CouponCustomer
+    {
+        public int CouponId { get; set; }
+        public CouponModel Coupon { get; set; }
+        public int CustomerId { get; set; }
+        public CustomerModel Customer { get; set; }
+    }
+```
+
+```csharp
+public DbSet<CouponCustomer> CouponCustomer { get; set; }
+```
+
+- add these to both entity *CouponModel.cs* and *CustomerModel.cs*
+
+```csharp
+public List<CouponCustomer> CouponCustomer { get; set; }
+```
+
+- The relationship also needs to be configured via the Fluent API in *AppDbContext.cs* file inside *OnModelCreating* method
+
+```csharp
+modelBuilder.Entity<CouponCustomer>()
+                .HasKey(cc => new { cc.CouponId, cc.CustomerId });
+            modelBuilder.Entity<CouponCustomer>()
+                .HasOne(cc => cc.Coupon)
+                .WithMany(b => b.CouponCustomer)
+                .HasForeignKey(cc => cc.CouponId);
+            modelBuilder.Entity<CouponCustomer>()
+                .HasOne(cc => cc.Customer)
+                .WithMany(c => c.CouponCustomer)
+                .HasForeignKey(cc => cc.CustomerId);
+```
+
+```vbnet
+dotnet ef migrations add JoinCouponCustomer
+```
+
+```vbnet
+dotnet ef database update
+```
+
 # HW_Week06_Day05_Many-To-Many
 
 # Class A

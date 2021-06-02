@@ -1,0 +1,34 @@
+﻿@page
+@model CodeFirstApp.Views.Branches.IndexModel
+@{
+    var branches = (List<BranchModel>)ViewBag.Branches;
+    var searchByID = (BranchModel)ViewBag.SearchByID;
+    var searchByAddress = (List<BranchModel>)ViewBag.SearchByAddress;
+}
+
+@*    <h2>Search for branch with id 2</h2>
+    <h3>@searchByID.Name | @searchByID.Address | @searchByID.Area</h3>
+
+    <h2>Search for branches with address Riyadh</h2>
+@foreach (var branch in searchByAddress)
+{
+    <h1>@branch.Name | @branch.Address | @branch.Area</h1>
+}
+*@
+
+<form class="form-inline my-3" asp-action="Search" asp-controller="Branches">
+
+    <input class="form-control mr-sm-2" typeof="search" name="txt" placeholder="Search" aria-label="" />
+    <button class="btn btn-outline-success my-2" type="submit">Search by Address</button> 
+</form>
+@foreach (var branch in branches)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@branch.Name</h5>
+            <p class="card-text">@branch.Address | @branch.Area</p>
+            <a href="#" class="btn btn-primary">Visit Branch</a>
+        </div>
+    </div>
+}
+
