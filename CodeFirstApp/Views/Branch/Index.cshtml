@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "_Layout";
+    var branches = (List<Branch>)ViewData["branches"];
+}
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @foreach (var branch in branches)
+    {
+        <p>@branch.Id</p>
+        <p>@branch.Name</p>
+        <p>@branch.Area</p>
+    }
+
+</div>
+</body>
+</html>

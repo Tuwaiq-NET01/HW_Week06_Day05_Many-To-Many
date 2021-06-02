@@ -1,0 +1,20 @@
+﻿@{
+    Layout = null;
+    var customers = (List<Customer>) ViewData["customers"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+          @foreach (var cut in customers)
+          {
+              <p>@cut.firstName @cut.lasName</p>
+          }
+</div>
+</body>
+</html>
