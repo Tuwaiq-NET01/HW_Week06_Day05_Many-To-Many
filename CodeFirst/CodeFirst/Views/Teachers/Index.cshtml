@@ -1,0 +1,27 @@
+﻿<h1>This is Index Teachers</h1>
+@{
+    var Teachers = (List<Teacher>)ViewData["Teachers"];
+}
+
+
+<table class="table">
+    <tr>
+
+        <td scope="col">ID</td>
+        <td scope="col">First Name</td>
+        <td scope="col">Last Name</td>
+        <td scope="col">Email</td>
+
+    </tr>
+    <tbody>
+        @foreach (var teacher in Teachers)
+        {
+            <tr>
+                <td>@teacher.id</td>
+                <td>@teacher.firstName</td>
+                <td>@teacher.lastName</td>
+                <td>@teacher.email</td>
+            </tr>
+        }
+    </tbody>
+</table>

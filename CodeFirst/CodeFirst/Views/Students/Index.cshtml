@@ -1,0 +1,36 @@
+﻿<h1>This is Index Students</h1>
+@{
+    var Students = (List<Student>)ViewData["Students"];
+  //  var aa = (List<Student>)ViewData["greaterThanTwo"];
+
+ //   string fname = (string)ViewBag.firstName;
+
+
+   // string aa = (string)ViewBag.aa;
+
+}
+<h1> </h1>
+
+<table class="table">
+
+    <tr>
+        
+            <td  scope="col">ID</td>
+            <td  scope="col">First Name</td>
+            <td  scope="col">Last Name</td>
+            <td  scope="col">Email</td>
+        
+    </tr>
+    <tbody>
+        @foreach (var student in Students)
+        {
+        <tr>
+            <td>@student.id</td>
+            <td>@student.firstName</td>
+            <td>@student.lastName</td>
+            <td>@student.email</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
