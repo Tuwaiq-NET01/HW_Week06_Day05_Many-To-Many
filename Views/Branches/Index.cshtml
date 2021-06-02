@@ -1,0 +1,41 @@
+@{
+    var branches = (List<BranchModel>) ViewData["branches"];
+    var searchRes = (List<BranchModel>) ViewData["SearchResult"];
+}
+
+
+@* @using (Html.BeginForm()) *@
+@* { *@
+@*     <p> *@
+@*         Find by City: @Html.TextBox("SearchString")   *@
+@*         <input type="submit" value="Search" /></p> *@
+@* } *@
+
+
+<form class="form-inline my-3" asp-action="Search" asp-controller="Branches">
+    <input class="form-control mr-sm-2" typeof="search" name="txt" placeholder="Search" aria-label=""/>
+    <button class="btn btn-outline-success my-2" type="submit">Search</button>
+</form>
+
+
+<table class="table-bordered">
+    <thead>
+    <tr class="px-4 py-2">
+        <td>Id</td>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Area</td>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in branches)
+        {
+            <tr>
+                <td>@b.Id</td>
+                <td>@b.Name</td>
+                <td>@b.Address</td>
+                <td>@b.Area</td>
+            </tr>
+        }
+    </tbody>
+</table>
