@@ -1,0 +1,42 @@
+﻿@{
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+    string searchById = (string)ViewData["searchById"];
+    string searchById2 = (string)ViewData["searchById2"];
+    var greaterThanThree = (List<BranchModel>)ViewData["greaterThanThree"];
+
+}
+
+<h1>This is Branches Index</h1>
+
+<table style="margin-left: 3em">
+    <thead>
+        <tr>
+            <td> ID: </td>
+            <td> Address: </td>
+            <td> Name: </td>
+            <td> Area: </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var branch in Branches)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Address</td>
+                <td>@branch.Name</td>
+                <td>@branch.Area</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<!----
+<p> The address for ID 2 is: //searchById</p>
+
+//foreach (var id in greaterThanThree)
+{
+    <p> The ID that is greater than 3 is: //id.Id</p>
+}
+-->
