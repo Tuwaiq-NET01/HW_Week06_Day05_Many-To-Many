@@ -1,0 +1,37 @@
+﻿@{
+    List<CustomerModel> customers = (List<CustomerModel>) ViewData["Customers"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+
+    <table>
+        <thead>
+        <tr>
+        <td> ID </td>
+        <td> First Name </td>
+        <td> Last Name </td>
+        <td> Email </td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var Customer in customers)
+        {
+            <tr>
+                <td> @Customer.id</td>
+                <td> @Customer.FirstName </td> 
+                <td> @Customer.LastName </td>
+                <td> @Customer.Email </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
