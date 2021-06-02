@@ -11,7 +11,11 @@
 <h4 align="center">M-M Implementation in EF and MSTest Unit Testing</h4>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YounesAlturkey/Project01_ASP.NET_MVC/main/frontend/public/demo.png" alt="demo"/>
+  <img src="https://raw.githubusercontent.com/YounesAlturkey/HW_Week06_Day05_Many-To-Many/main/ManyToMany/demo1.png" alt="demo"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YounesAlturkey/HW_Week06_Day05_Many-To-Many/main/ManyToMany/demo2.png" alt="demo"/>
 </p>
 
 <div align="right">
