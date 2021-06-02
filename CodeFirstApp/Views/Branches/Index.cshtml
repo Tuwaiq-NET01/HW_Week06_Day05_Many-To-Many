@@ -1,0 +1,25 @@
+﻿@{
+    var branches = (List<BranchModel>)ViewData["Branches"];
+}
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Address</td>
+            <td>Name</td>
+            <td>Area</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var b in branches)
+            {
+                <tr>
+                    <td>@b.Id</td>
+                    <td>@b.Address</td>
+                    <td>@b.Name</td>
+                    <td>@b.Area</td>
+                </tr>
+            }
+    </tbody>
+</table>

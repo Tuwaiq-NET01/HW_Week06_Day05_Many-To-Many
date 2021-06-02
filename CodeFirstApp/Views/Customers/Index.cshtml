@@ -1,0 +1,52 @@
+﻿@{
+    var customers = (List<CustomerModel>)ViewData["Customers"];
+}
+
+@if (ViewData["ErrorMessage"]?.ToString().Length > 0)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewData["ErrorMessage"]
+    </div>
+}
+
+
+
+<form asp-controller="Customers" asp-action="Search" method="get">
+    <table class="table">
+        <tr>
+            <td>Search : </td>
+            <td>
+                <input type="text" name="q" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Search" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@ViewData["CustomerFirstName"]
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in customers)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.FirstName</td>
+                <td>@c.LastName</td>
+                <td>@c.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
