@@ -1,0 +1,11 @@
+﻿
+@{
+    var studnet1 = (List<StudnetModel>)ViewData["stdDetails"];
+}
+
+<h1>details</h1>
+@foreach (var std in studnet1)
+{
+    <p>@std.firstName</p>
+}
+

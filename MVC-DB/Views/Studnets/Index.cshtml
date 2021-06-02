@@ -1,0 +1,64 @@
+﻿
+@{
+    //Casting
+
+    var studnet = (List<StudnetModel>)ViewData["Studnets"];
+    var StudentId = ViewData["StudentId"];
+    var greaterThanTwo = (List<StudnetModel>)ViewData["greaterThanTwo"];
+    var srchItem = (List<StudnetModel>)ViewData["searchItem"];
+}
+<h1>Students</h1>
+<h1>@StudentId</h1>
+@*<h1>@greaterThanTwo</h1>
+@foreach(gr in greaterThanTwo)
+            {
+
+            }*@
+
+@*<table>
+    <tbody>
+        @foreach (var std in srchItem)
+        {
+            <tr>
+                <td>@std.ID</td>
+                <td>@std.firstName</td>
+                <td>@std.lastName</td>
+                <td>@std.email</td>
+            </tr>
+
+        }
+    </tbody>
+</table>*@
+
+
+<table>
+    <tr>
+        <th>
+            <td>
+                Id
+            </td>
+            <td>
+                First Name
+            </td>
+            <td>
+                Second Name
+            </td>
+            <td>
+                Email
+            </td>
+        </th>
+    </tr>
+    <tbody>
+        @foreach (var std in studnet)
+        {
+        <tr>
+            <td>@std.ID</td>
+            <td>@std.firstName</td>
+            <td>@std.lastName</td>
+            <td>@std.email</td>
+            <td><a href=""><button> Show</button></a></td>
+        </tr>
+
+            }
+    </tbody>
+</table>
