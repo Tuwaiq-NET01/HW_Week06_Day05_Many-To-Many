@@ -1,0 +1,35 @@
+﻿<h1>This is Branch Index</h1>
+@{
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+   
+}
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Address</td>
+            <td>Name</td>
+            <td>Area</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var branch in Branches)
+        {
+            <tr>
+
+                <td>@branch.Id</td>
+                <td>@branch.Adress</td>
+                <td>@branch.Name</td>
+                <td>@branch.Area</td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+
+
