@@ -1,0 +1,48 @@
+﻿@{
+    var students = (List<Student>)ViewData["students"];
+    var greateThantwou = (List<Student>)ViewData["greateThantwou"];
+    var seracher = ViewData["findu"];
+    var aa = (List<Student>)ViewBag.Student;
+}
+<div>
+    <div>
+        <h1>This is Student Page</h1>
+    </div>
+    <br />
+    <br />
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var Student in students)
+                {
+                    <tr>
+                        <td>@Student.Id</td>
+                        <td>@Student.FirstName</td>
+                        <td>@Student.LastName</td>
+                        <td>@Student.Email</td>
+                    </tr>
+                }
+                <tr><td></td><td></td><td></td><td></td></tr>
+                @*  @foreach (var gt2 in greateThantwou)
+        {
+            <tr>
+                <td>@gt2.Id</td>
+                <td>@gt2.FirstName</td>
+                <td>@gt2.LastName</td>
+                <td>@gt2.Email</td>
+            </tr>
+        }*@
+            </tbody>
+        </table>
+    </div>
+    <br />
+    @*<p> The one you are looking for is : @seracher</p>*@
+</div>
