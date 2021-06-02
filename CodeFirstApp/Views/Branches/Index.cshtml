@@ -1,0 +1,62 @@
+﻿@{
+   @* var Branches = (List<BranchModel>)ViewData["Branches"];
+    var BranchyAddress = ViewData["Branchy"];
+    var Greater = (List<BranchModel>)ViewData["Greater"];*@
+    var search = (List<BranchModel>)ViewData["search"];
+}
+<h1>
+    This is Branches index
+</h1>
+
+<!--<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Address</td>
+            <td>Name</td>
+            <td>Area</td>
+        </tr>
+    </thead>
+    <tbody>-->
+       @* @foreach (var branch in Branches)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Address</td>
+                <td>@branch.Name</td>
+                <td>@branch.Area</td>
+            </tr>
+        }*@
+
+        <!--</div>
+    </tbody>
+</table>
+<br />
+<hr />
+
+<h2> BranchyAddress</h2>
+<br />
+<div>
+    <ul>
+        <h1>Here come the where condition:</h1>-->
+     @*   @foreach (var element in Greater)
+        {
+            <li>@element.Id</li>
+            <li>@element.Name</li>
+            <li>@element.Address</li>
+            <li>@element.Area</li>
+        }*@
+    <!--</ul>
+    </div>
+<div>-->
+    <ul>
+        <h1>Here come the where condition:</h1>
+        @foreach (var element in search)
+        {
+            <li>@element.Id</li>
+            <li>@element.Name</li>
+            <li>@element.Address</li>
+            <li>@element.Area</li>
+        }
+    </ul>
+</div>
