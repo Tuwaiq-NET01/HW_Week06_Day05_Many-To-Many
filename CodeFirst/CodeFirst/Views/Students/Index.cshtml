@@ -1,0 +1,15 @@
+﻿@{
+    var Students = (List<StudentModel>)ViewData["Students"];
+    var Last = (String)ViewData["LastName"];
+}
+
+<h1>FAS</h1>
+<h1>llllllllllllllllll</h1>
+
+@foreach (var k in Students)
+{
+    <h1>@k.LastName</h1>
+}
+<h1>@Last</h1>
+<h1>llllllllllllllllll</h1>
+
