@@ -1,0 +1,39 @@
+﻿
+@{ 
+    var Students = (List<Student>)ViewData["Students"];
+  //  var Students1 = (string)ViewData["Students1"];
+   
+}
+
+<h1>This is Index Students</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            First Name
+        </td>
+        <td>
+            Last Name
+        </td>
+        <td>
+            Email
+        </td>
+
+    </tr>
+    </th>
+    <tbody>
+        @foreach (var Student in Students)
+        {
+            <tr>
+                <td>@Student.Id</td>
+                <td>@Student.FirstName</td>
+                <td>@Student.LastName</td>
+                <td>@Student.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
