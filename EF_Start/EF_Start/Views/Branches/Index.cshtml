@@ -1,0 +1,102 @@
+﻿@{
+    var Branches = (List<BranchModels>)ViewData["Branches"];
+    @* var search = (BranchModelcs)ViewData["searchById"];*@
+var search2 = ViewData["searchAdreesById"];
+var search3 = (List<BranchModels>)ViewData["searchGreatThanThree"];
+
+
+}
+
+<h1>this is the branche index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Address</th>
+            <th scope="col">Name</th>
+            <th scope="col">Area</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+
+            foreach (var item in Branches)
+            {
+
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Address</td>
+                    <td>@item.Name</td>
+                    <td>@item.Area</td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
+@*<div>
+        <h1>search By Id</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Address</th>
+                <th scope="col">Name</th>
+                <th scope="col">Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+
+
+                <tr>
+                    <th scope="row">@search.Id</th>
+                    <td>@search.Address</td>
+                    <td>@search.Name</td>
+                    <td>@search.Area</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+    </div>*@
+
+###
+
+<h1>Search By Id</h1>
+<h2>for Id 2 : @search2 </h2>
+
+###
+
+@*<div>
+    <h1>search Great Than Three</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Address</th>
+                <th scope="col">Name</th>
+                <th scope="col">Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+
+                foreach (var item in search3)
+                {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Address</td>
+                    <td>@item.Name</td>
+                    <td>@item.Area</td>
+                </tr>
+               }
+
+                }
+
+        </tbody>
+    </table>
+</div>*@
