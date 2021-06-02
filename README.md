@@ -1,5 +1,9 @@
 # HW_Week06_Day05_Many-To-Many
+المتدربة:سميره الحصيني 
 
+الفريق: الدرعية 
+
+المشرف: حاتم السلمان
 # Class A
 قم بإنشاء علاقة many-to-many باستخدام جدول Teachers و Students 
 
