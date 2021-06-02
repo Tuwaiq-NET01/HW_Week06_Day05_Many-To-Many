@@ -1,0 +1,46 @@
+﻿@using CodeFirst.Controllers
+@{
+    var students = (List<Student>)ViewData["Students"];
+    var studFirstName = (string)ViewData["studFirstName"];
+    var studLastName = (string) ViewData["studLastName"];
+    // var studList  = (List<Student>)ViewData["studList"];
+    // var searchResult  = (List<Student>)ViewData["searchResult"];
+}
+
+<h1>Students</h1>
+<form class="form-inline my-3" asp-action="Search" asp-controller="Students">
+    <input class="form-control mr-sm-2" typeof="search" name="txttxt" placeholder="Search">
+    <button class="btn btn-primary my-2" type="submit">Search</button>
+</form>
+
+<table class="table table-responsive">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var stud in students)
+    {
+        <tr>
+            <td>@stud.Id</td>
+            <td>@stud.FirstName</td>
+            <td>@stud.LastName</td>
+            <td>@stud.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+@if (studFirstName != null && studLastName != null)
+{
+     <h1>@studFirstName</h1> 
+     <h1>@studLastName</h1> 
+}
+@* <h1>@studList[0].FirstName @studList[0].LastName @studList[0].Email</h1> *@
+
+
