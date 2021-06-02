@@ -15,5 +15,7 @@ namespace CodeFirstApp.Models
         public int BranchId { get; set; }
         public BranchModel Branch { get; set; }
 
+        public List<Customer_ProductModel> Customer_Product { get; set; }
+
     }
 }

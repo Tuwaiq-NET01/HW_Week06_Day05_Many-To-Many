@@ -16,6 +16,8 @@ namespace CodeFirstApp.Models
 
         public ProfileModel Profile { get; set; }
 
+        public List<Customer_ProductModel> Customer_Product { get; set; }
+
 
     }
 }

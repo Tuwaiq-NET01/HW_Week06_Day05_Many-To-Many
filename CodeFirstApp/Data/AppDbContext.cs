@@ -18,6 +18,8 @@ namespace CodeFirstApp.Data
 
         public DbSet<BranchModel> Branchs { get; set; }
         public DbSet<ProfileModel> Profiles { get; set; }
+        public DbSet<Customer_ProductModel> Customers_Products { get; set; }
+
 
         //Fluent API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
