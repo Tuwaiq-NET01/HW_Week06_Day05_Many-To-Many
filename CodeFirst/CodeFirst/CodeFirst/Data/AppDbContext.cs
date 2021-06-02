@@ -37,6 +37,27 @@ namespace CodeFirst.Data
                 Id  = 3 ,  FirstName = "Abdullah", LastName = "Al heif",
                 Email = "Abdullah@hotmail.com"
             });
+            modelBuilder.Entity<Student>().HasData(new Student
+            {
+                Id = 4,
+                FirstName = "Sameera",
+                LastName = "Alhusaini",
+                Email = "sameera@hotmail.com"
+            });
+            modelBuilder.Entity<Student>().HasData(new Student
+            {
+                Id = 5,
+                FirstName = "Reema",
+                LastName = "AlYousef",
+                Email = "reemah@hotmail.com"
+            });
+            modelBuilder.Entity<Student>().HasData(new Student
+            {
+                Id = 6,
+                FirstName = "bayader",
+                LastName = "Alghamdi",
+                Email = "bayader@hotmail.com"
+            });
         }
 
         public DbSet<Student> Students { get; set; }

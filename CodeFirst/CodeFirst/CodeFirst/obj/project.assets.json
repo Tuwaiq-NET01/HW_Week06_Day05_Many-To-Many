@@ -6212,11 +6212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\CodeFirst\\CodeFirst\\CodeFirst\\CodeFirst.csproj",
+      "projectUniqueName": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\HW_Week06_Day05_Many-To-Many\\CodeFirst\\CodeFirst\\CodeFirst\\CodeFirst.csproj",
       "projectName": "CodeFirst",
-      "projectPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\CodeFirst\\CodeFirst\\CodeFirst\\CodeFirst.csproj",
+      "projectPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\HW_Week06_Day05_Many-To-Many\\CodeFirst\\CodeFirst\\CodeFirst\\CodeFirst.csproj",
       "packagesPath": "C:\\Users\\Batool Alghamdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\CodeFirst\\CodeFirst\\CodeFirst\\obj\\",
+      "outputPath": "C:\\Users\\Batool Alghamdi\\Desktop\\Tuwaiq\\.Net\\Hw\\HW_Week06_Day05_Many-To-Many\\CodeFirst\\CodeFirst\\CodeFirst\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Batool Alghamdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
