@@ -1,0 +1,66 @@
+﻿@{ 
+    var Students= (List<Student>)ViewData["Students"];
+
+   // string stName = (string)ViewBag.fullName;
+   // var greatThanOne = (List<Student>)ViewData["greatThanOne"];
+    
+
+}
+<h1>FirstCode _ Fetch Data</h1>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+
+            <td>Id</td>
+            <td>Full Name</td>
+            <td>last Name</td>
+            <td>Email</td>
+
+        </tr>
+    </thead>
+    
+ 
+    <tbody>
+        @foreach (var Student in Students)
+        {
+        <tr>
+            <td>@Student.ID</td>
+            <td>@Student.FullName</td>
+            <td>@Student.LastName</td>
+            <td>@Student.Email</td>
+
+        </tr>
+
+        }
+    </tbody>
+</table>
+@*<p>The fullName is @stName</p>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+
+            <td>Id</td>
+            <td>Full Name</td>
+            <td>last Name</td>
+            <td>Email</td>
+
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (var Student in greatThanOne)
+        {
+            <tr>
+                <td>@Student.ID</td>
+                <td>@Student.FullName</td>
+                <td>@Student.LastName</td>
+                <td>@Student.Email</td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>*@
