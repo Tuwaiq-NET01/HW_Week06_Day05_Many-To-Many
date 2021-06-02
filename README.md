@@ -1,7 +1,5 @@
 # HW_Week06_Day05_Many-To-Many
 
-ASP.NET Core 5 MCV Project
-
 <br />
 <b> Student:</b>  Mohammed Rashed Albalawi.
 <br />
