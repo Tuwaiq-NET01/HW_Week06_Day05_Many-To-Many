@@ -1,0 +1,32 @@
+﻿@{ 
+    List<BranchModel> branches = (List<BranchModel>) ViewData["Branches"];
+    string searchByID = ViewData["searchByID"] as string;
+}
+<h1>This is a Branch Index</h1>
+<h2>@searchByID</h2>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Area</td>
+            <td>Email</td>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            foreach (var item in branches)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Area</td>
+                    <td>@item.Email</td>
+                    <td>@item.Name</td>
+                </tr>
+                
+            }
+        }
+        
+    </tbody>
+</table>

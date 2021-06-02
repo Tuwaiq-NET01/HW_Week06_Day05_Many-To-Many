@@ -1,0 +1,31 @@
+﻿@{
+    List<CustomerModel> customers = (List<CustomerModel>)ViewData["Customers"];
+    List<CustomerModel> FilterByID = (List<CustomerModel>)ViewData["FilterByID"];
+}
+<h1>This is a Customer Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Email</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in FilterByID)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Email</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                </tr>
+            }
+
+        }
+
+    </tbody>
+</table>
