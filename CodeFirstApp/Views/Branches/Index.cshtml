@@ -1,0 +1,51 @@
+﻿@{
+    var Branchs = (List<BranchModel>)ViewData["Branchs"];
+    var searchbyId = ViewData["searchbyId"];
+    var greatthan = (List<BranchModel>)ViewData["greatthanthree"];
+    var ss = (List<BranchModel>)ViewData["BranchsS"];
+}
+@if (ss != null) {
+@foreach (var s in ss)
+{
+    <h3>@s.Address</h3>
+
+}
+    }
+
+==================================
+@foreach (var great in greatthan)
+{
+    <h3>@great.id</h3>
+
+}
+
+========================================
+
+
+<h1>@searchbyId</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Address</th>
+            <th>Name</th>
+            <th>Area</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var branch in Branchs)
+        {
+            <tr>
+                <td>@branch.id</td>
+                <td>@branch.Address</td>
+                <td>@branch.Name</td>
+                <td>@branch.Area</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+
