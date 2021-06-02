@@ -1,0 +1,46 @@
+﻿@{ 
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+    var el = ViewData["sId"];
+    var gr = (List<BranchModel>)ViewData["Gr"];
+   @* var aa = (List<BranchModel>)ViewData["aa"];*@
+}
+
+
+<h1>This is Branches Index </h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Address</td>
+            <td>Name</td>
+            <td>Area</td>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var branch in Branches)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Address</td>
+                <td>@branch.Name</td>
+                <td>@branch.Area</td>
+            </tr>
+
+        }
+    </tbody>
+    
+</table>
+
+
+<h3> This is adress @el</h3> <br />
+      @foreach (var b in gr)
+        {
+              <h3> @b.Name </h3>
+        } 
+
+  @* @foreach (var b in aa)
+        {
+              <h3> @b.Name </h3>
+        } *@
