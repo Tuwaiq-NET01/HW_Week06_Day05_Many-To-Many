@@ -1,0 +1,11 @@
+﻿@page
+@{
+    var searchResult = (BranchModel)ViewBag.searchResult;
+}
+
+<ul>
+    <li>@searchResult.Id</li>
+    <li>@searchResult.Name</li>
+    <li>@searchResult.Address</li>
+    <li>@searchResult.Area</li>
+</ul>
