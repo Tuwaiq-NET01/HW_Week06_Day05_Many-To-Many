@@ -1,0 +1,37 @@
+﻿@{
+    var customers = (List<CustomersModel>) ViewData["Customers"];
+    var customerId = (CustomersModel) ViewData["CustomerId"];
+    var greaterThanTwo = (List<CustomersModel>)ViewData["GreaterThanTwo"];
+    var searchCustomers = (List<CustomersModel>) ViewData["searchCustomers"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    @if(searchCustomers != null)
+    {
+        @foreach (var customer in searchCustomers)
+        {
+            <h1>@customer.Id | @customer.FirstName | @customer.LastName | @customer.Email</h1>
+        }
+    }
+</div>
+
+<h3>==========================================================</h3>
+
+<h1>Linq with result of Id > 2</h1>
+@if(greaterThanTwo != null)
+    {
+        @foreach (var customer in greaterThanTwo)
+        {
+            <h1>@customer.Id | @customer.FirstName | @customer.LastName | @customer.Email</h1>
+        }
+    }
+
+</body>
+</html>
