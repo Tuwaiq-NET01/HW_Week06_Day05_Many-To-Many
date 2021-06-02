@@ -1,0 +1,28 @@
+﻿@{
+        var Costomers = (List<CostomerModel>)ViewData["Costomers"];
+}
+<h1> This is Costomers </h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Addres</th>
+            <th scope="col">Name</th>
+            <th scope="col">Area</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var Costomer in Costomers)
+            {
+                <tr>
+                    <th scope="row">@Costomer.Id</th>
+                    <td>@Costomer.FristName</td>
+                    <td>@Costomer.LastName</td>
+                    <td>@Costomer.Email</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

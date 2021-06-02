@@ -1,0 +1,91 @@
+﻿
+@{
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+    var searchbyid = ViewData["Searchbyid"];
+
+    var greatthanthree = (List<BranchModel>)ViewData["Greatthanthree"];
+
+    var b = (List<BranchModel>)ViewData["BB"];
+
+}
+
+@*<h2>search</h2>
+
+
+<h2> less than three</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Addres</th>
+            <th scope="col">Name</th>
+            <th scope="col">Area</th>
+        </tr>s
+    </thead>
+    <tbody>
+        @{
+            foreach (var i in b)
+            {
+                <tr>
+                    <th scope="row">@i.Id</th>
+                    <td>@i.Addres</td>
+                    <td>@i.Name</td>
+                    <td>@i.Area</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+*@
+
+    <h3>@searchbyid</h3>
+
+    <h2> less than three</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Addres</th>
+                <th scope="col">Name</th>
+                <th scope="col">Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var Costomer in greatthanthree)
+                {
+                    <tr>
+                        <th scope="row">@Costomer.Id</th>
+                        <td>@Costomer.Addres</td>
+                        <td>@Costomer.Name</td>
+                        <td>@Costomer.Area</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <h1> This is Costomers </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Addres</th>
+                <th scope="col">Name</th>
+                <th scope="col">Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var Costomer in Branches)
+                {
+                    <tr>
+                        <th scope="row">@Costomer.Id</th>
+                        <td>@Costomer.Addres</td>
+                        <td>@Costomer.Name</td>
+                        <td>@Costomer.Area</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
