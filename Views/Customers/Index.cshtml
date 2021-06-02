@@ -1,0 +1,28 @@
+@{
+    var customers = (List<CustomerModel>) ViewData["customers"];
+}
+<ul>
+
+</ul>
+
+<table class="table-bordered">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last name</td>
+        <td>Email</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in customers)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.FirstName</td>
+            <td>@c.LastName</td>
+            <td>@c.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>
