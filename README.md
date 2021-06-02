@@ -1,5 +1,20 @@
 # HW_Week06_Day05_Many-To-Many
 
+ASP.NET Core 5 MCV Project
+
+<br />
+<b> Student:</b>  Mohammed Rashed Albalawi.
+<br />
+<b> Group:</b>  Al-qiddiyah.
+<br />
+<b> Group Supervisor:</b>  Noorah Abdullah.
+
+
+<br />
+<hr />
+<br />
+
+
 # Class A
 قم بإنشاء علاقة many-to-many باستخدام جدول Teachers و Students 
 

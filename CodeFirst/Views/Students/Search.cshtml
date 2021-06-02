@@ -1,0 +1,29 @@
+﻿
+@{
+    var searchRes = (List<Student>)ViewData["searchRes"];
+    var target = (string)ViewData["target"];
+}
+
+<h1>SEARCH RESULTS FOR: @target </h1>
+<hr />
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>Email</th>
+    </tr>
+    <tbody>
+        @foreach (var std in searchRes)
+        {
+            <tr>
+                <td>@std.Id</td>
+                <td>@std.FirstName</td>
+                <td>@std.LastName</td>
+                <td>@std.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
