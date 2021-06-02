@@ -1,0 +1,11 @@
+﻿@{
+    var SearchResult = (List<StudentModel>)ViewData["SearchResult"];
+}
+<h1>This is Search Page</h1>
+
+
+@foreach (var sr in SearchResult)
+{
+    <h2> @sr.FirstName</h2>
+    <p>ID:@sr.Id | Email: @sr.Eamil</p>
+}

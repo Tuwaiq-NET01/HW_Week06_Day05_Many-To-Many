@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    var Students = (List<StudentModel>)ViewData["Students"];//for the index action(Display all students)
+
+   
+
+    @*var Id = ViewBag.Id;*@ 
+
+   
+}
+
+<h1>This is Index Students</h1>
+
+
+@*to Daisplay all Students*@
+
+<table class="table">
+    <thead class="thead-light">
+    <thead>
+
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Show</th>
+
+        </tr>
+
+    </thead>
+
+
+    <tbody>
+
+       @foreach (var student in Students)
+        {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.FirstName</td>
+            <td>@student.LastName</td>
+            <td>@student.Eamil</td>
+            <td><button class="btn"><a href="/students/details/@student.Id">Show</a></button></td>
+        </tr>
+
+        }
+
+    </tbody>
+</table>

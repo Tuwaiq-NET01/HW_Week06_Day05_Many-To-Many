@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{C629DB06-027E-49B3-9FB5-43DA228A6F9A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeFirst/Controllers/StudentsController.cs">
+    <Files>
+      <File FileName="CodeFirst/Models/TeacherModel.cs" Line="18" Column="55" />
+      <File FileName="CodeFirst/Models/StudentToTeacherModel.cs" Line="1" Column="1" />
+      <File FileName="CodeFirst/Models/StudentModel.cs" Line="21" Column="8" />
+      <File FileName="CodeFirst/Data/AppDbContext.cs" Line="58" Column="61" />
+      <File FileName="CodeFirst/Controllers/StudentsController.cs" Line="33" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CodeFirst" expanded="True">
+            <Node name="CodeFirst" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentsController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Students" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CodeFirst PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/arwawanla/MVC/codeFirst/CodeFirst/CodeFirst/Models/StudentToTeacherModel.cs" relfile="CodeFirst/Models/StudentToTeacherModel.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
