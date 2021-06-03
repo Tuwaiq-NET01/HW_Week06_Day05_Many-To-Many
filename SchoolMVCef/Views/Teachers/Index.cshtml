@@ -1,0 +1,29 @@
+﻿@{
+    var Teachers = (List<TeacherModel>)ViewData["Teachers"];
+
+}
+
+<h1>
+    List of all Teachers' table content
+</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td> Name </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Teachers)
+        {
+            <tr>
+                <td> @s.Id </td>
+                <td> @s.Name </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
