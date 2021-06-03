@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{8FFCED99-87AC-4FA2-B914-2DF9AA358C1E}|Default">
+  <MonoDevelop.Ide.ItemProperties.SchoolMVCef PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Data/AppDbContext.cs" Line="42" Column="42" />
+      <File FileName="Models/TeacherModel.cs" />
+      <File FileName="Views/Students/Index.cshtml" />
+      <File FileName="Controllers/TeachersController.cs" />
+      <File FileName="Views/Teachers/Index.cshtml" />
+      <File FileName="Models/TeachModel.cs" />
+      <File FileName="Models/StudentModel.cs" />
+      <File FileName="Migrations/20210603035928_MakeManyToManyRel.cs" />
+      <File FileName="Migrations/20210603041457_InsertIntoStudentsAndTeachers_2.cs" />
+      <File FileName="Migrations/20210603041457_InsertIntoStudentsAndTeachers_2.Designer.cs" />
+      <File FileName="appsettings.json" Line="3" Column="97" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SchoolMVCef" expanded="True">
+            <Node name="SchoolMVCef" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20210603041457_InsertIntoStudentsAndTeachers_2.cs" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Students" expanded="True" />
+                <Node name="Teachers" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
