@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var teacher = (List<Teacher>)ViewData["teacher_name"] ;
+}
+
+<div class="text-center">
+    @foreach (var item in teacher)
+    {
+        <p>
+            @item.Id, @item.FullName, @item.Email
+        </p>
+        
+    }
+    <h5> @teacher.Count() </h5>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
