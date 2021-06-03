@@ -1,0 +1,12 @@
+@{
+    var teacher_details = (IQueryable<Teacher>)ViewData["teacher_details"];
+}
+
+<div class="container">
+    @foreach (var item in teacher_details)
+    {
+        <p>
+            @item.Id, @item.FullName, @item.Email
+        </p>
+    }
+</div>

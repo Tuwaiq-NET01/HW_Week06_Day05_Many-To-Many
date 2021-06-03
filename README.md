@@ -1,5 +1,25 @@
 # HW_Week06_Day05_Many-To-Many
 
+<p align="center">
+  <img src="./migration.png" alt="demo"/>
+</p>
+
+<p align="center">
+  <img src="./table.png" alt="demo"/>
+</p>
+
+<div align="right">
+
+#
+
+### **اسم المتدرب : عبدالعزيز الاسمري**
+
+### **اسم المشرفة: غادة المطيري**
+
+### **اسم المجموعة: السودة**
+
+</div>
+
 # Class A
 قم بإنشاء علاقة many-to-many باستخدام جدول Teachers و Students 
 
