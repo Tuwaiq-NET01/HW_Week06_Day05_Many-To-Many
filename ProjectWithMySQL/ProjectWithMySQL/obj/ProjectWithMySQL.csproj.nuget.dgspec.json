@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ahmed/Projects/ProjectWithMySQL/ProjectWithMySQL/ProjectWithMySQL.csproj": {}
+  },
+  "projects": {
+    "/Users/ahmed/Projects/ProjectWithMySQL/ProjectWithMySQL/ProjectWithMySQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahmed/Projects/ProjectWithMySQL/ProjectWithMySQL/ProjectWithMySQL.csproj",
+        "projectName": "ProjectWithMySQL",
+        "projectPath": "/Users/ahmed/Projects/ProjectWithMySQL/ProjectWithMySQL/ProjectWithMySQL.csproj",
+        "packagesPath": "/Users/ahmed/.nuget/packages/",
+        "outputPath": "/Users/ahmed/Projects/ProjectWithMySQL/ProjectWithMySQL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahmed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{D65757F1-7713-4BC9-9CE3-D98D3397733D}|Default">
+  <MonoDevelop.Ide.ItemProperties.ProjectWithMySQL PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectWithMySQL/Migrations/20210603051342_StudentTeacherRelationship.cs">
+    <Files>
+      <File FileName="ProjectWithMySQL/Controllers/StudentsController.cs" Line="36" Column="55" />
+      <File FileName="ProjectWithMySQL/Data/AppDbContext.cs" />
+      <File FileName="ProjectWithMySQL/Views/Students/Index.cshtml" />
+      <File FileName="ProjectWithMySQL/Views/Shared/_Layout.cshtml" />
+      <File FileName="ProjectWithMySQL/Views/Students/Details.cshtml" />
+      <File FileName="ProjectWithMySQL/Models/Room.cs" />
+      <File FileName="ProjectWithMySQL/Models/Student.cs" Line="9" Column="8" />
+      <File FileName="ProjectWithMySQL/Models/Student_teacher.cs" Line="6" Column="34" />
+      <File FileName="ProjectWithMySQL/Models/Teacher.cs" Line="14" Column="10" />
+      <File FileName="ProjectWithMySQL/Migrations/20210603051342_StudentTeacherRelationship.cs" Line="44" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjectWithMySQL" expanded="True">
+            <Node name="ProjectWithMySQL" expanded="True">
+              <Node name="Migrations" expanded="True">
+                <Node name="20210603051342_StudentTeacherRelationship.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
