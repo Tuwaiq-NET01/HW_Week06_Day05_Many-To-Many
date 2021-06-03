@@ -1,0 +1,30 @@
+﻿@{
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+    //var aa = (List<BranchModel>)ViewData["aa"];
+
+}
+<table>
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>Name</td>
+            <td>Adress</td>
+            <td>Area</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Branch in Branches)
+        {
+            <tr>
+                <td> @Branch.id </td>
+                <td> @Branch.Name </td>
+                <td> @Branch.Adress </td>
+                <td> @Branch.Area</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*@foreach (var a in aa)
+{
+<h4>@a.Area </h4>        
+}*@

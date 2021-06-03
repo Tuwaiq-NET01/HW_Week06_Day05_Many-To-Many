@@ -1,0 +1,25 @@
+﻿@{
+    var Customers = (List<CustomerModel>)ViewData["Customers"];
+}
+<h1>This is Customers index</h1>
+<table>
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Email</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Customer in Customers)
+        {
+            <tr>
+                <td> @Customer.Id </td>
+                <td> @Customer.FirstName </td>
+                <td> @Customer.LastName </td>
+                <td> @Customer.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
