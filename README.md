@@ -3,4 +3,4 @@
 # Class A
 قم بإنشاء علاقة many-to-many باستخدام جدول Teachers و Students 
 
-<img src=./result.png />
+<img src=./Result.png />
