@@ -1,0 +1,23 @@
+﻿@page
+@model CodeFirstApp1.Views.Branches.IndexModel
+@{
+    var branches = (List<BranchModel>)ViewBag.Branches;
+    var address = ViewBag.Address;
+}
+<h1>@address</h1>
+
+<form class="form-inline my-3" asp-action="Search" asp-controller="Branches">
+    <input class="form-control mr-sm-2" typeof="search" name="text" placeholder="Search" aria-label=""/>
+    <button class="btn btn-outline-success my-2" type="submit">search</button>
+</form>
+
+@foreach (var branch in branches)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@branch.Name</h5>
+            <p class="card-text">@branch.Address | @branch.Area</p>
+            <a href="#" class="btn btn-primary">Visit Branch</a>
+        </div>
+    </div>
+}
