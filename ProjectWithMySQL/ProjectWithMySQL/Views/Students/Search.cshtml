@@ -1,0 +1,15 @@
+﻿@{
+
+    var list = (List<Student>)ViewData["Students"];
+   
+    <ul>
+        @foreach (var item in list)
+        {
+
+            <li>@item.id -- @item.Name </li>
+
+
+        }
+    </ul>
+
+}
