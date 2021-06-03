@@ -1,0 +1,80 @@
+﻿@{
+    var Branches = (List<BranchModel>)ViewData["Branches"];
+    string searchById = (string)ViewBag.address;
+    string searchById2 = (string)ViewBag.address;
+    var greatthanthree = (List<BranchModel>)ViewData["greaterthanthree"];
+
+}
+
+<h1>This is branches index</h1>
+@*
+<h3>search by id (first)</h3>
+
+@searchById
+
+<h3>search by id (single)</h3>
+
+@searchById2
+<br />
+*@
+<h3> table of branches</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <td>Id </td>
+            <td> Address</td>
+            <td> Name</td>
+            <td> Area</td>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var branch in Branches)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Name</td>
+                <td>@branch.Address</td>
+                <td>@branch.Area</td>
+
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+
+<br />
+@*
+<h3> table greater than three</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <td>Id </td>
+            <td> Address</td>
+            <td> Name</td>
+            <td> Area</td>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var branch in greatthanthree)
+        {
+            <tr>
+                <td>@branch.Id</td>
+                <td>@branch.Name</td>
+                <td>@branch.Address</td>
+                <td>@branch.Area</td>
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
+
+*@
